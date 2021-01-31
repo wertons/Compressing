@@ -1,0 +1,45 @@
+.flags{
+    padding-top: 30px;
+    padding-right: 5px;
+}
+
+.flags img{
+    cursor: pointer;
+}
+
+#section_home{
+    background-image: url(../img/uploads/2015/08/img_20170730_181702_554-1024x576.jpg);
+}
+
+#section_home2{
+    /*background-image: url(../img/uploads/2016/01/cala-deia-1024x768.jpg);*/
+}
+
+#section_home3{
+    background-image: url(../img/uploads/2015/08/img_20170921_232925_868-1024x768.jpg);
+    color: white !important;
+}
+
+#section_home4>.row>div{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    height: 400px;
+}
+
+#section_home4 .row div img{
+    opacity: 0.5;
+    transition: transform .2s;
+    object-fit: cover;
+    order: 2;
+}
+
+#section_home4 .row div img:hover{
+    transform: scale(1.2);
+}
+
+.furgo1{
+    background-image: url(../img/uploads/2015/08/img_20170326_165307_785-768x432.jpg);
+}
