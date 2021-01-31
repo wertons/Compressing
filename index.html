@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <link href="img/favicon.ico" rel="icon" type="image/png">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- magnific-popup CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!-- bootsnav CSS -->
+    <link rel="stylesheet" href="css/bootsnav.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Open+Sans:300,400,500,600,700,800|Playfair+Display:400,400i,700,700i"
+        rel="stylesheet">
+
+    <!-- Font Icon Core CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/et-line.css">
+    <link rel="stylesheet" href="css/icofont.css">
+
+    <!-- Core Style Css -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <link rel="stylesheet" href="css/custom.css">
+
+    <meta charset="UTF-8">
+
+    <meta name="author" content='Mr. "senior" developer'>
+
+    <meta name="description" content="Alquiler de furgonetas Mallorca">
+    <meta name="keywords" content="Mallorca, España, Islas Baleares, Negocio, Alquiler, Furgonetas, Camper, Vans">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Caracol and Friends</title>
+
+
+
+</head>
+
+<body>
+    <div id="main-vue">
+        <!-- == Start Loader == -->
+        <div class="loading">
+            <div class="v-middle text-center">
+                <div class="lds-ellipsis">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <!-- == End Loader == -->
+
+        <!-- == Start Navbar == -->
+        <nav class="navbar navbar-default bootsnav">
+            <div class="container">
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"
+                        aria-label="Desplegar menu de navegacion">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="#brand"><img src="img/logo-light.png" class="logo"
+                            alt="Logo de Caracol and Friends"></a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li><a href="#" data-scroll-nav="0" class="active">{{$t('home_menu')}}</a></li>
+                        <li><a href="#" data-scroll-nav="1">{{$t('about_menu')}}</a></li>
+                        <li><a href="#" data-scroll-nav="2">{{$t('vans_menu')}}</a></li>
+                        <li><a href="#" data-scroll-nav="3">{{$t('services_menu')}}</a></li>
+                        <li><a href="#" data-scroll-nav="4">{{$t('contact_menu')}}</a></li>
+                        <li class="flags"><img @click="changeLanguage('en')" src="img/flags-mini/gb.png"
+                                alt="Bandera de Reino Unido"></li>
+                        <li class="flags"><img @click="changeLanguage('es')" src="img/flags-mini/es.png"
+                                alt="Bandera de España"></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav>
+        <!-- == End Navbar == -->
+
+        <!-- == Start Header == -->
+        <header id="section_home" class="header main" data-scroll-index="0" data-overlay-dark="7">
+            <div class="container-fluid parallax2">
+                <div class="row">
+                    <div class="item">
+                        <div class="caption v-middle mt-30">
+                            <h5>{{$t('home_welcome')}}</h5>
+                            <h1>Caracol And Friends</h1>
+                            <div class="col-md-offset-3 col-md-6 col-sm-8 col-sm-offset-2">
+                                <p>{{$t('home_welcome2')}}</p>
+                            </div>
+                            <div class="clear-fix"></div>
+                            <a href="#0">
+                                <span
+                                    class="buton buton-bord-light buton-md text-uppercase">{{$t('home_button_vans')}}</span>
+                            </a> <a href="#0">
+                                <span
+                                    class="buton buton-bg-color buton-md text-uppercase">{{$t('home_button_rent')}}</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- == End Header == -->
+
+        <!-- == Start Video-intro Section == -->
+        <section id="section_home2" class="video-intro img-cover" data-overlay-dark="8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mt-100 md-mb-50">
+                        <div class="cont md-text-center">
+                            <h5>ALQUILER DE FURGONETAS VOLKSWAGEN CAMPER EN MALLORCA</h5>
+                            <p>Ponte en modo caracol, viaja con la casa a cuestas.</p>
+                            <i class="fa fa-play" aria-hidden="true"></i> <span>Nuestra historia</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="img">
+                            <img src="img/uploads/2015/08/img_20170711_074125_492-768x432.jpg" height="432" width="768"
+                                alt="Paisaje con furgonetas" />
+                        </div>
+                    </div>
+                    <div class="clear-fix"></div>
+                </div>
+            </div>
+        </section>
+        <!-- == End Video-intro Section == -->
+
+        <!-- == Start Hero Section == -->
+        <section id="section_home3" class="hero img-cover" data-scroll-index="1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="text-center mb-100">
+                            <br><br>
+                            <h4 class="fw-700 border-botm-center line-height-40 mb-30">SERVICIOS</h4>
+                            <br>
+                            <span
+                                class="buton buton-bord-light buton-md text-uppercase">{{$t('home_button_vans')}}</span>
+                        </div>
+                    </div>
+                    <div class="clear-fix"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="section_home4" class="hero img-cover" data-scroll-index="1">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="text-center mb-100 furgo1">
+                        <br><br>
+                        <h4 class="fw-700 border-botm-center line-height-40 mb-30">SERVICIOS</h4>
+                        <br>
+                        <span class="buton buton-bord-light buton-md text-uppercase">{{$t('home_button_vans')}}</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/uploads/2015/08/img_20170409_184353_250-414x414.jpg" height="414" width="414"
+                        alt="Paisaje mar con furgoneta" />
+                    <div class="text-center mb-100 center">
+                        <br><br>
+                        <h4 class="fw-700 border-botm-center line-height-40 mb-30">SERVICIOS</h4>
+                        <br>
+                        <span class="buton buton-bord-light buton-md text-uppercase">{{$t('home_button_vans')}}</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/uploads/2015/08/img_20170504_191708_307-300x169.jpg" height="169" width="300"
+                        alt="Paisaje costa" />
+                    <div class="text-center mb-100 center">
+                        <br><br>
+                        <h4 class="fw-700 border-botm-center line-height-40 mb-30">SERVICIOS</h4>
+                        <br>
+                        <span class="buton buton-bord-light buton-md text-uppercase">{{$t('home_button_vans')}}</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team section-padding" data-scroll-index="4">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="section-head" data-title='Team'>
+                            <h4>Nuestras Furgos</h4>
+                        </div>
+                    </div>
+                    <div class="clear-fix"></div>
+
+                    <div class="owl-carousel owl-theme">
+
+                        <div class="item">
+                            <div class="team-img mb-15">
+                                <img src="img/uploads/2015/08/img_20170326_165307_785-768x432.jpg" height="432"
+                                    width="768" alt="Paisaje ocaso con furgoneta" />
+                                <div class="social">
+                                    <div class="v-middle">
+                                        <a href="#">
+                                            <span class="icon"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                                        </a>
+                                        <a href="#">
+                                            <span class="icon"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                                        </a>
+                                        <a href="#">
+                                            <span class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                                        </a> <a href="#">
+                                            <span class="icon"><i class="fa fa-behance" aria-hidden="true"></i></span>
+                                        </a>
+                                        <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,sed do eiusmod
+                                            tempor incid idunt </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-info text-center">
+                                <h6>Caracol</h6>
+                                <p>Be Original</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="team-img mb-15">
+                                <img src="img/uploads/2015/08/img_20170326_165307_785-768x432.jpg"
+                                    alt="Paisaje ocaso con furgoneta">
+                                <div class="social">
+                                    <div class="v-middle">
+                                        <a href="#">
+                                            <span class="icon"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                                        </a>
+                                        <a href="#">
+                                            <span class="icon"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                                        </a>
+                                        <a href="#">
+                                            <span class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                                        </a> <a href="#">
+                                            <span class="icon"><i class="fa fa-behance" aria-hidden="true"></i></span>
+                                        </a>
+                                        <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,sed do eiusmod
+                                            tempor incid idunt </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-info text-center">
+                                <h6>Californication</h6>
+                                <p>Be Free</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="team-img mb-15">
+                                <img src="img/uploads/2015/08/img_20170326_165307_785-768x432.jpg"
+                                    alt="Paisaje ocaso con furgoneta">
+                                <div class="social">
+                                    <div class="v-middle">
+                                        <a href="#">
+                                            <span class="icon"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                                        </a>
+                                        <a href="#">
+                                            <span class="icon"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                                        </a>
+                                        <a href="#">
+                                            <span class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                                        </a> <a href="#">
+                                            <span class="icon"><i class="fa fa-behance" aria-hidden="true"></i></span>
+                                        </a>
+                                        <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,sed do eiusmod
+                                            tempor incid idunt </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-info text-center">
+                                <h6>Lolita</h6>
+                                <p>Be Surfer</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- == End Team Section == -->
+
+
+        <!-- == Start Hero Section == -->
+        <section class="hero section-padding" data-scroll-index="1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="text-center mb-100">
+                            <h4 class="fw-700 border-botm-center line-height-40 mb-30">We are
+                                <span class="custom-font font-italic">creative</span> agency<br>we have plans for your
+                                future
+                            </h4>
+                            <p class="extra-prag">Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,sed do
+                                eiusmod tempor incid idunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,quis
+                                nostrud exerci tation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="clear-fix"></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <div class="feat md-mb-50">
+                            <span class="icon icon-lg main-color mb-15"><i class="icofont icofont-touch"></i></span>
+                            <h6 class="sm-title mb-15">Perfect Design</h6>
+                            <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,sed do eiusmod tempor incid
+                                idunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feat">
+                            <span class="icon icon-lg main-color mb-15"><i
+                                    class="icofont icofont-bird-wings"></i></span>
+                            <h6 class="sm-title mb-15">Web Development</h6>
+                            <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,sed do eiusmod tempor incid
+                                idunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feat md-mb-50">
+                            <span class="icon icon-lg main-color mb-15"><i
+                                    class="icofont icofont-disability-race"></i></span>
+                            <h6 class="sm-title mb-15">Logo & Branding</h6>
+                            <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,sed do eiusmod tempor incid
+                                idunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- == End Hero Section == -->
+
+        <!-- == Start Video-intro Section == -->
+        <section class="video-intro img-cover" data-overlay-dark="8" style="background-image: url(img/1.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mt-100 md-mb-50">
+                        <div class="cont md-text-center">
+                            <h5>Looking For Exclusive Services ?</h5>
+                            <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,sed do eiusmod tempor incid
+                                idunt ut labore et dolore magna aliqua.</p>
+                            <i class="fa fa-play" aria-hidden="true"></i> <span>View Our Story</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="img">
+                            <img src="img/promo.png" alt="Promocion servicio blog">
+                        </div>
+                    </div>
+                    <div class="clear-fix"></div>
+                </div>
+            </div>
+        </section>
+        <!-- == End Video-intro Section == -->
+
+        <!-- == Start Portfolio Section == -->
+        <section class="portfolio section-padding pb-0" data-scroll-index="2">
+            <div class="container-fliud">
+                <div class="row">
+
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="section-head" data-title='Portfolio'>
+                            <h4>Our Work</h4>
+                        </div>
+                    </div>
+                    <div class="clear-fix"></div>
+
+                    <!-- filter links -->
+                    <div class="filtering text-center mb-50">
+                        <span data-filter='*' class="active">All</span> <span data-filter='.brand'>Brand</span>
+                        <span data-filter='.web'>Design</span> <span data-filter='.graphic'>Graphic</span>
+                    </div>
+
+                    <!-- gallery -->
+                    <div class="gallery wow fadeIn">
+
+                        <!-- gallery item -->
+                        <div class="col-md-4 items brand">
+                            <div class="item-img link">
+                                <a href="img/portfolio/1.jpg"> <img src="img/portfolio/1.jpg" alt="Textura fondo">
+                                    <div class="item-img-overlay">
+                                        <div class="overlay-info">
+                                            <h6 class="sm-title">Design . Motion</h6>
+                                            <h5>Crearive Design</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- gallery item -->
+                        <div class="col-md-4 items web">
+                            <div class="item-img link">
+                                <a href="img/portfolio/2.jpg"> <img src="img/portfolio/2.jpg" alt="Textura fondo">
+                                    <div class="item-img-overlay">
+                                        <div class="overlay-info">
+                                            <h6 class="sm-title">Design . Motion</h6>
+                                            <h5>Crearive Design</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- gallery item -->
+                        <div class="col-md-4 items graphic">
+                            <div class="item-img link">
+                                <a href="img/portfolio/3.jpg"> <img src="img/portfolio/3.jpg" alt="Textura fondo">
+                                    <div class="item-img-overlay">
+                                        <div class="overlay-info">
+                                            <h6 class="sm-title">Design . Motion</h6>
+                                            <h5>Crearive Design</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- gallery item -->
+                        <div class="col-md-4 items web">
+                            <div class="item-img link">
+                                <a href="img/portfolio/4.jpg"> <img src="img/portfolio/4.jpg" alt="Textura fondo">
+                                    <div class="item-img-overlay">
+                                        <div class="overlay-info">
+                                            <h6 class="sm-title">Design . Motion</h6>
+                                            <h5>Crearive Design</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- gallery item -->
+                        <div class="col-md-4 items web graphic">
+                            <div class="item-img link">
+                                <a href="img/portfolio/5.jpg"> <img src="img/portfolio/5.jpg" alt="Textura fondo">
+                                    <div class="item-img-overlay">
+                                        <div class="overlay-info">
+                                            <h6 class="sm-title">Design . Motion</h6>
+                                            <h5>Crearive Design</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- gallery item -->
+                        <div class="col-md-4 items brand">
+                            <div class="item-img link">
+                                <a href="img/portfolio/6.jpg"> <img src="img/portfolio/6.jpg" alt="Textura fondo">
+                                    <div class="item-img-overlay">
+                                        <div class="overlay-info">
+                                            <h6 class="sm-title">Design . Motion</h6>
+                                            <h5>Crearive Design</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- == End Portfolio Section == -->
+
+        <!-- == Start Numbers Section == -->
+        <section class="numbers img-cover" data-overlay-dark="8" style="background-image: url(img/5.jpg);">
+            <div class="container">
+                <div class="row md-text-center">
+                    <div class="col-md-3">
+                        <div class="item md-mb-50">
+                            <span class="icon icon-heart"></span>
+                            <div class="cont">
+                                <h3 class="counter">134</h3>
+                                <p class="sm-title fw-700">Happy Clients</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item md-mb-50">
+                            <span class="icon icon-globe"></span>
+                            <div class="cont">
+                                <h3 class="counter">882</h3>
+                                <p class="sm-title fw-700">Powerful Options</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item md-mb-50">
+                            <span class="icon icon-toolbox"></span>
+                            <div class="cont">
+                                <h3 class="counter">1933</h3>
+                                <p class="sm-title fw-700">Projects Done</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item">
+                            <span class="icon icon-megaphone"></span>
+                            <div class="cont">
+                                <h3 class="counter">14</h3>
+                                <p class="sm-title fw-700">Team Members</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- == End Numbers Section == -->
+
+        <!-- == Start Services Section == -->
+        <section class="services section-padding pb-0" data-scroll-index="3">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="section-head" data-title='Services'>
+                            <h4>Why Choose Us?</h4>
+                            <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,sed do eiusmod tempor incid
+                                idunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="clear-fix"></div>
+
+                    <div class="col-md-4">
+                        <div class="feat text-center mb-50">
+                            <span class="icon icon-lg main-color mb-15"><i class="icofont icofont-flora"></i></span>
+                            <h6 class="sm-title mb-15">Branding</h6>
+                            <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,sed do eiusmod tempor incid
+                                idunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feat text-center mb-50">
+                            <span class="icon icon-lg main-color mb-15"><i class="icofont icofont-monitor"></i></span>
+                            <h6 class="sm-title mb-15">Marketing</h6>
+                            <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,sed do eiusmod tempor incid
+                                idunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feat text-center mb-50">
+                            <span class="icon icon-lg main-color mb-15"><i
+                                    class="icofont icofont-chart-line-alt"></i></span>
+                            <h6 class="sm-title mb-15">Analytics</h6>
+                            <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,sed do eiusmod tempor incid
+                                idunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feat text-center mb-50">
+                            <span class="icon icon-lg main-color mb-15"><i class="icofont icofont-macbook"></i></span>
+                            <h6 class="sm-title mb-15">Web Design</h6>
+                            <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,sed do eiusmod tempor incid
+                                idunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feat text-center mb-50">
+                            <span class="icon icon-lg main-color mb-15"><i
+                                    class="icofont icofont-anchor-alt"></i></span>
+                            <h6 class="sm-title mb-15">Development</h6>
+                            <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,sed do eiusmod tempor incid
+                                idunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feat text-center mb-50">
+                            <span class="icon icon-lg main-color mb-15"><i
+                                    class="icofont icofont-ui-head-phone"></i></span>
+                            <h6 class="sm-title mb-15">Custom Support</h6>
+                            <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,sed do eiusmod tempor incid
+                                idunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="clear-fix"></div>
+
+                    <div class="img-promo mt-100 col-md-offset-1 col-md-10">
+                        <img src="img/promo2.png" alt="image">
+                    </div>
+                </div>
+            </div>
+            <div class="order-services section-padding img-cover" data-overlay-dark="8"
+                style="background-image: url(img/4.jpg);">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-offset-2 col-sm-offset-1 col-md-8 col-sm-10 text-center">
+                            <h5 class="fw-400 mb-10">Looking for exclusive services?</h5>
+                            <h4 class="text-uppercase fw-800 mb-20">Get The Best For Your Business</h4>
+                            <p class="mb-30">Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,sed do eiusmod
+                                tempor incid idunt ut labore et dolore magna aliqua ed do eiusmod tempor.</p>
+                            <a href="#0"> <span class="buton buton-bord-light buton-md text-uppercase">See More</span>
+                            </a>
+                            <a href="#0"> <span class="buton buton-bg-color buton-md text-uppercase">Getting
+                                    Started</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- == End Services Section == -->
+
+        <!-- == Start Team Section == -->
+        <section class="team section-padding" data-scroll-index="4">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="section-head" data-title='Team'>
+                            <h4>Creative Minds</h4>
+                        </div>
+                    </div>
+                    <div class="clear-fix"></div>
+
+                    <div class="owl-carousel owl-theme">
+
+                        <div class="item">
+                            <div class="team-img mb-15">
+                                <img src="img/team/1.jpg" alt="img">
+                                <div class="social">
+                                    <div class="v-middle">
+                                        <a href="#">
+                                            <span class="icon"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                                        </a>
+                                        <a href="#">
+                                            <span class="icon"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                                        </a>
+                                        <a href="#">
+                                            <span class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                                        </a> <a href="#">
+                                            <span class="icon"><i class="fa fa-behance" aria-hidden="true"></i></span>
+                                        </a>
+                                        <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,sed do eiusmod
+                                            tempor incid idunt </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-info text-center">
+                                <h6>Sam martin</h6>
+                                <p>The manager</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="team-img mb-15">
+                                <img src="img/team/2.jpg" alt="img">
+                                <div class="social">
+                                    <div class="v-middle">
+                                        <a href="#">
+                                            <span class="icon"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                                        </a>
+                                        <a href="#">
+                                            <span class="icon"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                                        </a>
+                                        <a href="#">
+                                            <span class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                                        </a> <a href="#">
+                                            <span class="icon"><i class="fa fa-behance" aria-hidden="true"></i></span>
+                                        </a>
+                                        <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,sed do eiusmod
+                                            tempor incid idunt </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-info text-center">
+                                <h6>Adam Smith</h6>
+                                <p>Front-End Developer</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="team-img mb-15">
+                                <img src="img/team/3.jpg" alt="img">
+                                <div class="social">
+                                    <div class="v-middle">
+                                        <a href="#">
+                                            <span class="icon"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                                        </a>
+                                        <a href="#">
+                                            <span class="icon"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                                        </a>
+                                        <a href="#">
+                                            <span class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                                        </a> <a href="#">
+                                            <span class="icon"><i class="fa fa-behance" aria-hidden="true"></i></span>
+                                        </a>
+                                        <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,sed do eiusmod
+                                            tempor incid idunt </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-info text-center">
+                                <h6>Lila Wilson</h6>
+                                <p>Php Developer</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="team-img mb-15">
+                                <img src="img/team/4.jpg" alt="img">
+                                <div class="social">
+                                    <div class="v-middle">
+                                        <a href="#">
+                                            <span class="icon"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                                        </a>
+                                        <a href="#">
+                                            <span class="icon"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                                        </a>
+                                        <a href="#">
+                                            <span class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                                        </a> <a href="#">
+                                            <span class="icon"><i class="fa fa-behance" aria-hidden="true"></i></span>
+                                        </a>
+                                        <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,sed do eiusmod
+                                            tempor incid idunt </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-info text-center">
+                                <h6>Alex Smith</h6>
+                                <p>Seo</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="team-img mb-15">
+                                <img src="img/team/2.jpg" alt="img">
+                                <div class="social">
+                                    <div class="v-middle">
+                                        <a href="#">
+                                            <span class="icon"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                                        </a>
+                                        <a href="#">
+                                            <span class="icon"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                                        </a>
+                                        <a href="#">
+                                            <span class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                                        </a> <a href="#">
+                                            <span class="icon"><i class="fa fa-behance" aria-hidden="true"></i></span>
+                                        </a>
+                                        <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,sed do eiusmod
+                                            tempor incid idunt </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-info text-center">
+                                <h6>Adam Smith</h6>
+                                <p>Front-End Developer</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="team-img mb-15">
+                                <img src="img/team/3.jpg" alt="img">
+                                <div class="social">
+                                    <div class="v-middle">
+                                        <a href="#">
+                                            <span class="icon"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                                        </a>
+                                        <a href="#">
+                                            <span class="icon"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                                        </a>
+                                        <a href="#">
+                                            <span class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                                        </a> <a href="#">
+                                            <span class="icon"><i class="fa fa-behance" aria-hidden="true"></i></span>
+                                        </a>
+                                        <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,sed do eiusmod
+                                            tempor incid idunt </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-info text-center">
+                                <h6>Lila Wilson</h6>
+                                <p>Php Developer</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mt-100 md-text-center">
+                            <h5 class="fw-700 line-height-40 mb-15">Enjoy with
+                                <span class="custom-font font-italic">the best design</span> and options<br> don't miss
+                                your chance.
+                            </h5>
+                            <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,sed do eiusmod tempor incid
+                                idunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,quis nostrud exerci
+                                tation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <a href="#0">
+                                <span class="mt-30 buton buton-md buton-bg-color buton-radius-md">Know More <i
+                                        class="fa fa-angle-right" aria-hidden="true"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="skills mt-100">
+                            <div class="prog-item mb-40">
+                                <div class="leble">Branding <span>80%</span></div>
+                                <div class="skills-progress"><span data-value='80%'></span></div>
+                            </div>
+                            <div class="prog-item mb-40">
+                                <div class="leble">Web Design <span>85%</span></div>
+                                <div class="skills-progress"><span data-value='85%'></span></div>
+                            </div>
+                            <div class="prog-item mb-40">
+                                <div class="leble">Graphic Design <span>75%</span></div>
+                                <div class="skills-progress"><span data-value='75%'></span></div>
+                            </div>
+                            <div class="prog-item">
+                                <div class="leble">Development <span>90%</span></div>
+                                <div class="skills-progress"><span data-value='90%'></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- == End Team Section == -->
+
+        <!-- == Start Clients Section == -->
+        <section class="clients clients-grid section-padding img-cover" data-overlay-dark="7"
+            style="background-image: url(img/3.jpg);" data-scroll-index="5">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="section-head" data-title='Clients'>
+                            <h4>Testimonials</h4>
+                        </div>
+                    </div>
+                    <div class="clear-fix"></div>
+
+                    <div class="owl-carousel owl-theme text-center">
+                        <div class="item">
+                            <div class="cle-img">
+                                <img src="img/clients/1.jpg" alt="img">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, conse ctetur elit,sed do tempor incid idunt ut labore et
+                                dolore magna aliqua.</p>
+                            <div class="cle-info mt-15">
+                                <h6>Sam martin</h6>
+                                <span>Envato Customer</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="cle-img">
+                                <img src="img/clients/2.jpg" alt="img">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, conse ctetur elit,sed do tempor incid idunt ut labore et
+                                dolore magna aliqua.</p>
+                            <div class="cle-info mt-15">
+                                <h6>Sam martin</h6>
+                                <span>Envato Customer</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="cle-img">
+                                <img src="img/clients/3.jpg" alt="img">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, conse ctetur elit,sed do tempor incid idunt ut labore et
+                                dolore magna aliqua.</p>
+                            <div class="cle-info mt-15">
+                                <h6>Sam martin</h6>
+                                <span>Envato Customer</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="cle-img">
+                                <img src="img/clients/4.jpg" alt="img">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, conse ctetur elit,sed do tempor incid idunt ut labore et
+                                dolore magna aliqua.</p>
+                            <div class="cle-info mt-15">
+                                <h6>Sam martin</h6>
+                                <span>Envato Customer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- == End Clients Section == -->
+
+        <!-- == Start Price Section == -->
+        <section class="price section-padding bg-gray" data-scroll-index="6">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="section-head" data-title='Pricing'>
+                            <h4>Our Offers</h4>
+                        </div>
+                    </div>
+                    <div class="clear-fix"></div>
+
+                    <div class="col-md-4">
+                        <div class="item text-center md-mb-50">
+                            <div class="type">
+                                <h6 class="custom-font">Basic</h6>
+                            </div>
+                            <div class="mount">
+                                <h2 class="custom-font"><span>$</span>10</h2>
+                                <span class="per">Per / Month</span>
+                            </div>
+                            <div class="featruse">
+                                <p>Any Ware Access</p>
+                                <p>10 GB Hosting</p>
+                                <p>2 Unique Users</p>
+                                <p>Weekly Backups</p>
+                                <p> Support 24 / hour</p>
+                            </div>
+                            <div class="purchase">
+                                <a href="#"><span>Order Now</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item active text-center md-mb-50">
+                            <span class="star"><i class="fa fa-star" aria-hidden="true"></i></span>
+                            <div class="type">
+                                <h6 class="custom-font">Standard</h6>
+                            </div>
+                            <div class="mount">
+                                <h2 class="custom-font"><span>$</span>50</h2>
+                                <span class="per">Per / Month</span>
+                            </div>
+                            <div class="featruse">
+                                <p>Any Ware Access</p>
+                                <p>Unlimited Hosting</p>
+                                <p>50 Unique Users</p>
+                                <p>Weekly Backups</p>
+                                <p>Support 24 / hour</p>
+                            </div>
+                            <div class="purchase">
+                                <a href="#"><span>Order Now</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="item text-center">
+                            <div class="type">
+                                <h6 class="custom-font">Premium</h6>
+                            </div>
+                            <div class="mount">
+                                <h2 class="custom-font"><span>$</span>100</h2>
+                                <span class="per">Per / Month</span>
+                            </div>
+                            <div class="featruse">
+                                <p>Any Ware Access</p>
+                                <p>Unlimited Hosting</p>
+                                <p>Unlimited Users</p>
+                                <p>Weekly Backups</p>
+                                <p> Support 24 / hour</p>
+                            </div>
+                            <div class="purchase">
+                                <a href="#"><span>Order Now</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- == End Price Section == -->
+
+        <!-- == Start Blog Section == -->
+        <section class="blog-grid section-padding" data-scroll-index="7">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="section-head" data-title='News'>
+                            <h4>Our Blog</h4>
+                        </div>
+                    </div>
+                    <div class="clear-fix"></div>
+
+                    <div class="owl-carousel owl-theme">
+                        <div class="item custom-shadow">
+                            <span class="tag">Branding</span>
+                            <h6>New web design trends</h6>
+                            <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,sed do eiusmod tempor incid
+                                idunt ut labore et dolore magna aliqua.</p>
+                            <div class="info mt-30 border-top pt-30">
+                                <div class="author">
+                                    <img src="img/blog/01.jpg" alt="img"> <span>by : Alex Smith</span>
+                                    <span class="date">6 August 2018</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item custom-shadow" data-overlay-dark="7" style="background-image: url(img/3.jpg);">
+                            <div class="content">
+                                <span class="tag">ThemeForest</span>
+                                <h6>Minimal design for ever</h6>
+                                <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,sed do eiusmod tempor incid
+                                    idunt ut labore et dolore magna aliqua.</p>
+                                <div class="info mt-30 border-top pt-30">
+                                    <div class="author">
+                                        <img src="img/blog/02.jpg" alt="img"> <span>by : Alex Smith</span>
+                                        <span class="date">6 August 2018</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item custom-shadow">
+                            <span class="tag">Envato</span>
+                            <h6>Hipster's style in web</h6>
+                            <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,sed do eiusmod tempor incid
+                                idunt ut labore et dolore magna aliqua.</p>
+                            <div class="info mt-30 border-top pt-30">
+                                <div class="author">
+                                    <img src="img/blog/01.jpg" alt="img"> <span>by : Alex Smith</span>
+                                    <span class="date">6 August 2018</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item custom-shadow">
+                            <span class="tag">Branding</span>
+                            <h6>New web design trends</h6>
+                            <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit,sed do eiusmod tempor incid
+                                idunt ut labore et dolore magna aliqua.</p>
+                            <div class="info mt-30 border-top pt-30">
+                                <div class="author">
+                                    <img src="img/blog/02.jpg" alt="img"> <span>by : Alex Smith</span>
+                                    <span class="date">6 August 2018</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- == End Blog Section == -->
+
+        <!-- == Start Subscribe Section == -->
+        <section class="subscribe section-padding bg-gray">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-offset-2 col-md-8">
+                        <h6 class="mb-30 fw-700 text-uppercase">John Our Newsletter</h6>
+                        <form>
+                            <input type="text" name="email" placeholder="Your Email" aria-label="Input para email">
+                            <input type="submit" name="submit" value="Subscribe" aria-label="Subcribirse al newsletter">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- == End Subscribe Section == -->
+
+        <!-- == Start Contact Section == -->
+        <section class="contact" data-scroll-index="8">
+            <div class="container-fliud">
+                <div class="row">
+                    <div class="col-md-6 sub-height">
+                        <div id="ieatmaps" class="map"></div>
+                    </div>
+                    <div class="col-md-6 main-height">
+                        <div class="contact-form section-padding">
+
+                            <div class="col-md-offset-2 col-md-8">
+                                <div class="section-head" data-title='Contact'>
+                                    <h4>Get In Touch</h4>
+                                </div>
+                            </div>
+                            <div class="clear-fix"></div>
+
+                            <form class="form" id="contact-form" method="post" action="contact.php">
+
+                                <div class="messages"></div>
+
+                                <div class="controls">
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input id="form_name" type="text" name="name" placeholder="Name"
+                                                    required="required">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input id="form_subject" type="text" name="subject"
+                                                    placeholder="Subject">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input id="form_email" type="email" name="email" placeholder="Email"
+                                                    required="required">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <textarea id="form_message" name="message" placeholder="Message"
+                                                    rows="4" required="required"></textarea>
+                                            </div>
+                                            <input type="submit" value="Send message">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+    <!-- == End Contact Section == -->
+
+    <!-- == Start Footer Section == -->
+    <footer class="section-padding footer-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 item md-mb-50">
+                    <div class="text-center">
+                        <span class="icon main-color fz-18 mb-15"><i class="icofont icofont-phone"></i></span>
+                        <h6 class="sm-title mb-10">Contact Us</h6>
+                        <p>+61 3 8376 6284</p>
+                        <p>Skype : info404</p>
+                    </div>
+                </div>
+                <div class="col-md-4 item md-mb-50">
+                    <div class="text-center">
+                        <span class="icon main-color fz-18 mb-15"><i class="icofont icofont-pin"></i></span>
+                        <h6 class="sm-title mb-10">Address</h6>
+                        <p>245 Quigley Blvd, Ste K</p>
+                        <p>863 Hollywood Nth, USA</p>
+                    </div>
+                </div>
+                <div class="col-md-4 item">
+                    <div class="text-center">
+                        <span class="icon main-color fz-18 mb-15"><i class="icofont icofont-ui-email"></i></span>
+                        <h6 class="sm-title mb-10">Email</h6>
+                        <p>
+                            <a href="mailto:support@bestlooker.pro">support @ bestlooker.pro</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="clear-fix"></div>
+
+                <div class="text-center mt-80">
+                    <div class="social">
+                        <a href="#"> <span class="icon"><i class="fa fa-facebook" aria-hidden="true"></i></span> </a>
+                        <a href="#"> <span class="icon"><i class="fa fa-twitter" aria-hidden="true"></i></span> </a>
+                        <a href="#"> <span class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></span> </a>
+                        <a href="#"> <span class="icon"><i class="fa fa-behance" aria-hidden="true"></i></span> </a>
+                    </div>
+                    <p class="copy">CopyRight © 2018 By Fondo All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- == End Footer Section == -->
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- bootsnav -->
+    <script src="js/bootsnav.js"></script>
+
+    <!-- scrollIt -->
+    <script src="js/scrollIt.min.js"></script>
+
+    <!-- magnific-popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <!-- owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- stellar js -->
+    <script src="js/jquery.stellar.min.js"></script>
+
+    <!-- isotope.pkgd.min js -->
+    <script src="js/isotope.pkgd.min.js"></script>
+
+    <!-- validator js -->
+    <script src="js/validator.js"></script>
+
+    <!-- Map -->
+    <script src="js/map.js"></script>
+
+    <!-- custom script -->
+    <script src="js/custom.js"></script>
+
+    <!-- google map api -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK7lXLHQgaGdP3IvMPi1ej0B9JHUbcqB0&callback=initMap">
+    </script>
+
+
+    <!-- VUE -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-i18n/dist/vue-i18n.js"></script>
+
+    <script>
+        const messages = {
+            en: {
+                hello: 'hello world',
+                //Home
+                home_menu: 'Home',
+                home_welcome: 'Vive tu experiencia CAMPER en',
+                home_welcome2: 'MALLORCA  /  FURGONETA  / VAN  /  CAMPER',
+                home_button_vans: '¡FURGOS!',
+                home_button_rent: '¡ALQUILA!',
+                //About
+                about_menu: 'Sobre nosotros',
+                about_text1: 'Tras un tiempo de cocer a fuego lento en la cabeza, mucho papeleo, paciencia y muchísima ilusión, nace el proyecto de Caracol and friends. Una manera diferente de romper con la rutina, conocer Mallorca con otro punto de vista, dar un toque diferente a tus bodas o eventos, o lo que tú nos sugieras.',
+                about_text2: 'El nombre de caracol and friends, sale del bautizo de la primera furgoneta que llego, el “Caracol”. En el primer “slow/road trip” con él, viajando con la casa a cuestas a modo de caracol, lo bautizamos con ese nombre. Poco a poco la familia fue creciendo, y así fue como llegaron sus amigos, Californication y Lolita.',
+                about_text3: 'Seguro que os lleváis genial con ellos y podéis hacer unos increíbles road trips o destacar en vuestros eventos.',
+                about_text4: 'Home is where you park it.',
+                //Vans
+                vans_menu: 'Furgos',
+                //Services
+                services_menu: 'Servicios',
+                //Contact
+                contact_menu: 'Contacto'
+            },
+            de: {
+                hello: 'こんにちは、世界'
+            },
+            es: {
+                hello: 'hello world',
+                //Home
+                home_menu: 'Inicio',
+                home_welcome: 'Vive tu experiencia CAMPER en',
+                home_welcome2: 'MALLORCA  /  FURGONETA  / VAN  /  CAMPER',
+                home_button_vans: '¡FURGOS!',
+                home_button_rent: '¡ALQUILA!',
+                //About
+                about_menu: 'Sobre nosotros',
+                about_text1: 'Tras un tiempo de cocer a fuego lento en la cabeza, mucho papeleo, paciencia y muchísima ilusión, nace el proyecto de Caracol and friends. Una manera diferente de romper con la rutina, conocer Mallorca con otro punto de vista, dar un toque diferente a tus bodas o eventos, o lo que tú nos sugieras.',
+                about_text2: 'El nombre de caracol and friends, sale del bautizo de la primera furgoneta que llego, el “Caracol”. En el primer “slow/road trip” con él, viajando con la casa a cuestas a modo de caracol, lo bautizamos con ese nombre. Poco a poco la familia fue creciendo, y así fue como llegaron sus amigos, Californication y Lolita.',
+                about_text3: 'Seguro que os lleváis genial con ellos y podéis hacer unos increíbles road trips o destacar en vuestros eventos.',
+                about_text4: 'Home is where you park it.',
+                //Vans
+                vans_menu: 'Furgos',
+                //Services
+                services_menu: 'Servicios',
+                //Contact
+                contact_menu: 'Contacto'
+
+            },
+            ca: {
+                hello: 'こんにちは、世界'
+            }
+        }
+
+        // Create VueI18n instance with options
+        const i18n = new VueI18n({
+            locale: 'es', // set locale
+            fallbackLng: 'es', //If translation does not exist, use this
+            cache: {
+                enabled: true
+            },
+            lng: 'es',
+            messages // set locale messages
+        })
+
+
+        var vm = new Vue({
+            el: '#main-vue',
+            i18n,
+            data: {},
+            created() {
+                this.get();
+            },
+            methods: {
+                get: function () {
+
+                },
+                changeLanguage: function (lng) {
+                    // where lng is one of 'es', 'fr', 'en'
+                    //this.$i18n.i18next.changeLanguage(lng)
+                    this.$i18n.locale = lng;
+                    localStorage.setItem('lang', lng);
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
