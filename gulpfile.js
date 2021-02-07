@@ -86,7 +86,7 @@ function convertWebp() {
 function replaceSrc() {
     return src(['./*.html'])
         // See http://mdn.io/string.replace#Specifying_a_string_as_a_parameter
-        .pipe(replace((/(\.(png|jpg|jpeg))/), '.webp'))
+        .pipe(replace((/(\.(png|jpg|jpeg))/g), '.webp'))
         .pipe(dest('./'));
 }
 
