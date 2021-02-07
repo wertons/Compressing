@@ -80,7 +80,7 @@ function minJS() {
 function convertWebp() {
     return src(['./img/**', '!./img/*.webp'])
         .pipe(webp())
-        .pipe(dest('./trial'))
+        .pipe(dest('./img'))
 }
 
 function replaceSrc() {
@@ -91,5 +91,3 @@ function replaceSrc() {
 }
 
 exports.compress = series(clean, build, minCSS, minImg, minJS, convertWebp, replaceSrc);
-exports.webp = convertWebp;
-exports.replace = replaceSrc;
