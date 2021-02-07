@@ -1,16 +1,20 @@
 {
     "name": "PWAConf",
     "short_name": "PWAConf",
-    "start_url": ".",
+    "start_url": "https://testcompression.netlify.app/",
     "display": "standalone",
     "background_color": "#2A3443",
     "description": "App for van renting",
     "theme_color": "#2A3443",
     "icons": [
-      {
-        "src": "./img/icons/icon-512x512.png",
-        "sizes": "512x512",
-        "type": "image/png"
-      }
-    ]
-  }
+        {
+            "src": "https://testcompression.netlify.app/img/icons/maskable_icon_x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "url": "https://testcompression.netlify.app/index.html",
+    "lang": "Spanish; Castilian",
+    "screenshots": [],
+    "orientation": "natural"
+}
