@@ -6,6 +6,7 @@ var imageminPngquant = require('imagemin-pngquant');
 var imageminZopfli = require('imagemin-zopfli');
 var imageminMozjpeg = require('imagemin-mozjpeg'); 
 var imageminGiflossy = require('imagemin-giflossy');
+const uglify = require('gulp-uglify');
 
 function clean(cb) {
     cb();
@@ -54,7 +55,7 @@ function minImg(){
         imagemin.mozjpeg({
             progressive: true
         }),
-        //jpg very light lossy, use vs jpegtran
+        //jpg very light lossy, use vs Mozjpeg
         imageminMozjpeg({
             quality: 90
         })
@@ -62,6 +63,10 @@ function minImg(){
     .pipe(dest('./img'));
 }
 
+function minJS(){
+    return src(['./js/*.js'])
+    .pipe(uglify())
+    .pipe(dest('./js'));
+}
 
-
-exports.compress = series(clean, build, minCSS, minImg);
+exports.compress = series(clean, build, minCSS, minImg, minJS);
