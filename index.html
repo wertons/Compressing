@@ -45,7 +45,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Caracol and Friends</title>
-    
+
     <link rel="manifest" href="./manifest.json">
 
 
@@ -1010,7 +1010,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item custom-shadow" data-overlay-dark="7" style="background-image: url(img/3.webp);">
+                        <div class="item custom-shadow" data-overlay-dark="7"
+                            style="background-image: url(img/3.webp);">
                             <div class="content">
                                 <span class="tag">ThemeForest</span>
                                 <h6>Minimal design for ever</h6>
@@ -1096,7 +1097,8 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <label for="name" aria-label="Form name" style="display:none">Name</label>
+                                                <label for="name" aria-label="Form name"
+                                                    style="display:none">Name</label>
                                                 <input id="form_name" type="text" name="name" placeholder="Name"
                                                     required="required">
                                             </div>
@@ -1105,7 +1107,8 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label for="subject" aria-label="Form subject" style="display:none">Subject</label>
+                                                <label for="subject" aria-label="Form subject"
+                                                    style="display:none">Subject</label>
 
                                                 <input id="form_subject" type="text" name="subject"
                                                     placeholder="Subject">
@@ -1113,7 +1116,8 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label for="email" aria-label="Form email" style="display:none">Email</label>
+                                                <label for="email" aria-label="Form email"
+                                                    style="display:none">Email</label>
 
                                                 <input id="form_email" type="email" name="email" placeholder="Email"
                                                     required="required">
@@ -1123,7 +1127,8 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <label for="message" aria-label="Form message" style="display:none">Message</label>
+                                                <label for="message" aria-label="Form message"
+                                                    style="display:none">Message</label>
 
                                                 <textarea id="form_message" name="message" placeholder="Message"
                                                     rows="4" required="required"></textarea>
@@ -1174,10 +1179,14 @@
 
                 <div class="text-center mt-80">
                     <div class="social">
-                        <a href="#" aria-label="Link to facebook"> <span class="icon"><i class="fa fa-facebook" aria-hidden="true"></i></span> </a>
-                        <a href="#" aria-label="Link to twitter"> <span class="icon"><i class="fa fa-twitter" aria-hidden="true"></i></span> </a>
-                        <a href="#" aria-label="Link to instagram"> <span class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></span> </a>
-                        <a href="#" aria-label="Link to behance"> <span class="icon"><i class="fa fa-behance" aria-hidden="true"></i></span> </a>
+                        <a href="#" aria-label="Link to facebook"> <span class="icon"><i class="fa fa-facebook"
+                                    aria-hidden="true"></i></span> </a>
+                        <a href="#" aria-label="Link to twitter"> <span class="icon"><i class="fa fa-twitter"
+                                    aria-hidden="true"></i></span> </a>
+                        <a href="#" aria-label="Link to instagram"> <span class="icon"><i class="fa fa-instagram"
+                                    aria-hidden="true"></i></span> </a>
+                        <a href="#" aria-label="Link to behance"> <span class="icon"><i class="fa fa-behance"
+                                    aria-hidden="true"></i></span> </a>
                     </div>
                     <p class="copy">CopyRight © 2018 By Fondo All rights reserved</p>
                 </div>
@@ -1234,6 +1243,16 @@
 
     <!--SW-->
     <script src="./js/app.js"></script>
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js');
+            });
+        }
+    </script>
+
     <script>
         const messages = {
             en: {
