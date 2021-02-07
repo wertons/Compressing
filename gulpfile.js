@@ -33,37 +33,26 @@ function minCSS() {
 function minImg() {
     return src(['./img/**/*.{gif,png,jpg,svg}'])
         .pipe(cache(imagemin([
-            //png
             imageminPngquant({
                 speed: 1,
-                quality: [0.95, 1] //lossy settings
+                quality: [0.95, 1]
             }),
             imageminZopfli({
                 more: true
-                // iterations: 50 // very slow but more effective
             }),
-            //gif
-            // imagemin.gifsicle({
-            //     interlaced: true,
-            //     optimizationLevel: 3
-            // }),
-            //gif very light lossy, use only one of gifsicle or Giflossy
             imageminGiflossy({
                 optimizationLevel: 3,
-                optimize: 3, //keep-empty: Preserve empty transparent frames
+                optimize: 3,
                 lossy: 2
             }),
-            //svg
             imagemin.svgo({
                 plugins: [{
                     removeViewBox: false
                 }]
             }),
-            //jpg lossless
             imagemin.mozjpeg({
                 progressive: true
             }),
-            //jpg very light lossy, use vs Mozjpeg
             imageminMozjpeg({
                 quality: 90
             })
@@ -85,7 +74,6 @@ function convertWebp() {
 
 function replaceSrc() {
     return src(['./*.html'])
-        // See http://mdn.io/string.replace#Specifying_a_string_as_a_parameter
         .pipe(replace((/(\.(png|jpg|jpeg))/g), '.webp'))
         .pipe(dest('./'));
 }
