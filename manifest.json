@@ -16,5 +16,6 @@
     "url": "https://testcompression.netlify.app/index.html",
     "lang": "Spanish; Castilian",
     "screenshots": [],
-    "orientation": "natural"
+    "orientation": "natural",
+    "start_url":"./"
 }
